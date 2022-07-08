@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url(./images/bg-intro-desktop.png) no-repeat center;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  min-height: 800px;
+  padding: 20px;
+}
+
+.container>div {
+  flex: 1;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.box, .box-blue {
+  max-width: 540px;
+  border-radius: 8px;
+  box-shadow: 0 7px rgb(0 0 0 / 20%);
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.box p {
+  text-align: center;
+}
+
+.box-blue {
+  background-color: hsl(248, 32%, 49%);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.box-blue p {
+  margin: 0;
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin: 10px 0;
+  border: 1px solid #dfdfdf;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-control small {
+  color: hsl(0, 100%, 74%);
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  font-size: 12px;
+  font-weight: 400;
+  display: none;
+}
+
+.form-control.error input {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+
+.form-control img {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: none;
+}
+
+.form-control.error img {
+  display: block;
+}
+
+.submit {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #3eb37f;
+}
+
+p small {
+  color: #c4c2cd;
+}
+
+p small a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(248, 32%, 49%);
+}
+
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .box-blue p {
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  p small {
+    font-size: 10px;
+  }
+}
