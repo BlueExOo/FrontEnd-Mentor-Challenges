@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+  max-width: 925px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 25px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.bg-img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.sub-title {
+  color: hsl(215, 51%, 70%);
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  right: 0;
+  height: 2px;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.days {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+}
+
+.img-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.img-box p {
+  color: hsl(215, 51%, 70%);
+}
+
+.img-box p span {
+  color: hsl(0, 0%, 100%);
+}
+
+.img-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.img-circle img {
+  max-width: 95%;
+}
