@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg) hsl(185, 75%, 39%);
+  background-repeat: no-repeat no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.container {
+  max-width: 925px;
+  margin: 0 auto;
+}
+
+.header-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.header-img img {
+  max-width: 100%;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.victor-img img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -100px;
+}
+
+.title {
+  padding-top: 25px;
+}
+
+.title span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.sub-title {
+  padding-bottom: 25px;
+  color: hsl(0, 0%, 59%);
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.stats-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  position: relative;
+}
+
+.stats-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  margin: 0 -40px;
+  background-color: hsla(0, 0%, 59%, 0.2)
+}
+
+.stats-num {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.p {
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
